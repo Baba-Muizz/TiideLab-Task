@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TideLab</title>
+</head>
+
+
+
+<body style="">
+
+    <style>
+        input {
+            width: 85%;
+            padding: 12px;
+            margin: 5px 20px;
+            border: none;
+            outline: none;
+            
+        }
+        input:focus{
+            outline: none;
+        }
+        .submit{
+            background-color:#39d420;
+        }
+        .header_text{
+            font-size: 45px;
+        }
+
+        .form_container{
+            width: 50%;
+            background-color: rgb(12, 5, 0);
+            opacity: 75%;
+        }
+        .instruction{
+            width: 50%;
+        }
+        .second_section{
+            width: 33.3%;
+            float: left;
+            text-align: center;
+        }
+        .third_section{
+            width: 50%;
+            float: left;
+            text-align: center;
+        }
+        .header_paragraph{
+            max-width: 67%;
+        }
+        .footer{
+            background-color: rgb(14, 13, 13);
+            color: #fff;
+        }
+        .heade{
+            width: 50%;
+            float: left;
+        }
+   
+
+        @media screen and (max-width:800px) {
+            .form_container, .instruction, .second_section, .third_section{
+            width: 100%;
+        }
+        
+        }
+    </style>
+
+
+<!-- heading   -->
+
+
+    <div style="width: 80%; padding: 0px 15px;  margin:10px auto ; color: rgb(17, 17, 17);">
+
+
+        <div class="heade" >  
+            <p>ProCleaners</p>
+        </div>
+        <div class="heade">  
+            <p>Phone: 1-800-222-3030</p>
+        </div>
+        
+        <div style="clear:left;"></div>
+        
+        </div>
+
+    
+<div style="background-image: url(img/bg_color.jpg);">
+    <div style=" width: 80%; padding:45px ; margin:10px auto ; color: #fff;">
+
+        <div  style=" float: left;" class="instruction">
+         
+            <h1 class="header_text">Vancouver's Best <br> Home Cleaners </h1>
+            <p class="header_paragraph" style="max-width: 67%;">Pro cleaning is Vancouver's best cleaning service.  For the quality maid service Vancouver
+            relies on, book one of our  experienced,background-checked professionals to have your  home clean in no time.
+            </p>
+    
+        </div>
+    
+    
+        <div class="form_container" style="float: left; text-align:center; color: #fff; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bolder;">
+            <h2>Request Info &amp; Booking </h2>
+            <p>Fill this form and we'll contact you as son as we can.</p>
+          
+            <form action=""name="signUp" onsubmit="processForm()" id="signUp">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <input type="number" name="number" id="number" placeholder="Your Phone" required>
+                <input type="submit" class="submit" name="submit" value="Request Info &amp Booking" style= "width:90%; padding:10px; margin: 5px 0 30px 5px; font-weight: bolder; color: #fff; font-size: large;">
+            </form>
+    
+        </div>
+        <div style="clear:left;"></div>
+    </div>
+</div>
+
+<!-- second section  -->
+
+<div style="width: 80%; padding:45px ; margin: 20px auto; color: rgb(17, 17, 17);">
+
+<div class="second_section">
+<img src="img/education.png" alt="">
+<h4 style="font-weight: bold; font-size: larger;">Trusted Professionals</h4>
+<p style>Our professionals are experienced, friendly, and background-checked</p>
+</div>
+<div class="second_section">
+<img src="img/finance.png" alt="">
+<h4 style="font-weight: bold; font-size: larger;">Available Everyday</h4>
+<p style>We are available to serve you 7days per week. We'll work around your schedule.</p>
+</div>
+<div class="second_section">
+<img src="img/production.png" alt="">
+<h4 style="font-weight: bold; font-size: larger;">100% Money-Back Guarantee</h4>
+<p style>If you're not staisfied, we'll refund all of your money. It's as simple as that.</p>
+</div>
+
+
+<div style="clear:left;"></div>
+
+</div>
+<!-- third section  -->
+
+<div style="background-color:#f5f5f5;">
+    <div style="width: 80%; padding:45px ; margin: 20px auto 0; color: rgb(17, 17, 17);">
+
+
+        <div class="third_section">
+            <img src="img/user-4.png" alt="">
+            <p>Paulo Parra</p>
+            <hr style="width: 50%;">
+            <p><i>The team was fast and friendly-honestly my <br> house hasn't been this clean in years!</i></p>
+        </div>
+        <div class="third_section">
+            <img src="img/user-1.png" alt="">
+            <p>Ana Carolina</p>
+            <hr style="width: 50%;">
+            <p><i>It feels so great walking into a fresh, clean <br> apartment everyday. These guys make my <br> place spotless</i></p>
+        </div>
+        
+        
+        <div style="clear:left;"></div>
+        
+        </div>
+        
+</div>
+<!-- footer  -->
+    <div style="background-color: #0c0c0c;">
+        <div class="footer" style="width: 80%; padding:8px ; margin: 20px auto;  color: rgb(255, 255, 255);">
+            <p style="padding-left: 20px;">&copy;Copyright. All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+
+<script>
+
+    function processForm(){
+        fullname = document.getElementById('name').value
+        email = document.getElementById('email').value
+        number = document.getElementById('number').value
+
+        alert(`Name: ${fullname}, Email: ${email}, Phone Number: ${number}. `);
+
+       
+    }
+</script>
+</body>
+</html>
