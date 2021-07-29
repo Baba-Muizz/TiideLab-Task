@@ -6,171 +6,236 @@
     <title>TideLab</title>
 </head>
 
+<link rel="stylesheet" href="custom.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
 
 
-<body style="">
+<header>
+    <div class="brand-logo">
+        <b><i style="color:aliceblue; text-decoration:none;">Yusuf Abdulmuizz</i></b>
+    </div>
 
-    <style>
-        input {
-            width: 85%;
-            padding: 12px;
-            margin: 5px 20px;
-            border: none;
-            outline: none;
-            
-        }
-        input:focus{
-            outline: none;
-        }
-        .submit{
-            background-color:#39d420;
-        }
-        .header_text{
-            font-size: 45px;
-        }
+    <input type="checkbox" id="toggle-btn">
+    <label for="toggle-btn" class="show-menu-btn"><i class="fas fa-bars"></i></label>
 
-        .form_container{
-            width: 50%;
-            background-color: rgb(12, 5, 0);
-            opacity: 75%;
-        }
-        .instruction{
-            width: 50%;
-        }
-        .second_section{
-            width: 33.3%;
-            float: left;
-            text-align: center;
-        }
-        .third_section{
-            width: 50%;
-            float: left;
-            text-align: center;
-        }
-        .header_paragraph{
-            max-width: 67%;
-        }
-        .footer{
-            background-color: rgb(14, 13, 13);
-            color: #fff;
-        }
-        .heade{
-            width: 50%;
-            float: left;
-        }
-   
+    <nav>
+        <ul class="navigation">
+            <li><a href="#index"><i class="fas fa-house-damage"></i> Home</a></li>
+            <li><a href="#about"><i class="far fa-image"></i> About</a></li>
+            <li><a href="#works"><i class="fab fa-blogger-b"></i> Works</a></li>
+            <li><a href="#event"><i class="fas fa-question"></i> Event</a></li>
+            <li><a href="#con"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
+            <label for="toggle-btn" class="hide-menu-btn"><i class="fas fa-times"></i></label>
+        </ul>
+    </nav>
+</header>
 
-        @media screen and (max-width:800px) {
-            .form_container, .instruction, .second_section, .third_section{
-            width: 100%;
-        }
-        
-        }
-    </style>
+
+
+<body style=" font-family:sans-serif;">
+
+ 
 
 
 <!-- heading   -->
 
 
-    <div style="width: 80%; padding: 0px 15px;  margin:10px auto ; color: rgb(17, 17, 17);">
+    <!-- <div style="width: 80%; padding: 0px 15px;  margin:10px auto ; color: rgb(17, 17, 17);">
 
 
         <div class="heade" >  
-            <p>ProCleaners</p>
+            <p><i>Mavericks</i></p>
         </div>
         <div class="heade">  
-            <p>Phone: 1-800-222-3030</p>
+            <p>TIIDELAB COHORT3</p>
         </div>
         
         <div style="clear:left;"></div>
         
-        </div>
+        </div> -->
 
     
-<div style="background-image: url(img/bg_color.jpg);">
+<div style="background-image: url(img/hero.jpg);  background-size: cover;">
     <div style=" width: 80%; padding:45px ; margin:10px auto ; color: #fff;">
 
-        <div  style=" float: left;" class="instruction">
+        <div  style=" float: left; padding-top: 2em;" class="instruction">
          
-            <h1 class="header_text">Vancouver's Best <br> Home Cleaners </h1>
-            <p class="header_paragraph" style="max-width: 67%;">Pro cleaning is Vancouver's best cleaning service.  For the quality maid service Vancouver
-            relies on, book one of our  experienced,background-checked professionals to have your  home clean in no time.
-            </p>
-    
+            <h1 class="header_text ">Hi,<br>
+                I'm Abdulmuizz,<br>
+                <span class="" style="color: rgb(134, 4, 4);">Web Developer.</span>  </h1>
+                <p style="padding: 10px; text-justify: kashida;">I am a multifaceted Front-end developer. I create clean, simple and professional websites depending on the client's specifications.</p>
         </div>
+
+        
     
     
-        <div class="form_container" style="float: left; text-align:center; color: #fff; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bolder;">
-            <h2>Request Info &amp; Booking </h2>
-            <p>Fill this form and we'll contact you as son as we can.</p>
-          
-            <form action=""name="signUp" onsubmit="processForm()" id="signUp">
-                <input type="text" name="name" id="name" placeholder="Your Name" required>
-                <input type="email" name="email" id="email" placeholder="Your Email" required>
-                <input type="number" name="number" id="number" placeholder="Your Phone" required>
-                <input type="submit" class="submit" name="submit" value="Request Info &amp Booking" style= "width:90%; padding:10px; margin: 5px 0 30px 5px; font-weight: bolder; color: #fff; font-size: large;">
-            </form>
-    
+        <div class="head_picture" id="contact" style="float: left; text-align:center; color: #fff; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bolder;">
+           
+            <div class="personal_picture" style="float: left;">
+            <img src="img/picture2.png" alt="">
         </div>
-        <div style="clear:left;"></div>
+        
+    </div>
+    <div style="clear:left;"></div>
+      
+        
     </div>
 </div>
 
 <!-- second section  -->
 
-<div style="width: 80%; padding:45px ; margin: 20px auto; color: rgb(17, 17, 17);">
+<div class="skill" id="about" style="width: 80%; padding:45px ; margin: 20px auto; color: rgb(17, 17, 17);">
+    <h2 class="title_head">Skills</h2>
 
 <div class="second_section">
-<img src="img/education.png" alt="">
-<h4 style="font-weight: bold; font-size: larger;">Trusted Professionals</h4>
-<p style>Our professionals are experienced, friendly, and background-checked</p>
+<img src="img/javaa.png" alt="">
+<h4 style="font-weight: bold; font-size: larger;">CSS</h4>
+<p style>I am proficient in the use of Cascading Style sheet to beutify web pages.</p>
 </div>
 <div class="second_section">
-<img src="img/finance.png" alt="">
-<h4 style="font-weight: bold; font-size: larger;">Available Everyday</h4>
-<p style>We are available to serve you 7days per week. We'll work around your schedule.</p>
+<img src="img/htmll.png" alt="">
+<h4 style="font-weight: bold; font-size: larger;">HTML 5</h4>
+<p style>I write and create simple but clean skeleton code</p>
 </div>
 <div class="second_section">
-<img src="img/production.png" alt="">
-<h4 style="font-weight: bold; font-size: larger;">100% Money-Back Guarantee</h4>
-<p style>If you're not staisfied, we'll refund all of your money. It's as simple as that.</p>
+<img src="img/javaaa.png" alt="">
+<h4 style="font-weight: bold; font-size: larger;">JAVASCRIPT</h4>
+<p style>I have the ability to bring responsivity to web sections</p>
 </div>
 
 
 <div style="clear:left;"></div>
 
 </div>
+
+<!-- Worksssss -->
+<div class="experience" id="works" style="background-color:azure; padding: 15px;">
+    <h2 class="title_head typewriter-text">My Works</h2>
+    <main class="work">
+        <div class="work_item">
+            <img src="img/work13.jpg">
+        </div>
+        <div class="work_item">
+             <img src="img/work12.jpg">
+        </div>
+        <div class="work_item">
+             <img src="img/work11.jpg">
+        </div>
+        <div class="work_item">
+             <img src="img/work10.jpg">
+        </div>
+        <div class="work_item">
+             <img src="img/work9.jpg">
+            <p></p>
+        </div>
+        <div class="work_item">
+             <img src="img/work8.jpg">
+        </div>
+        <div class="work_item">
+            <img src="img/work7.jpg">
+        </div>
+        <div class="work_item">
+             <img src="img/work6.jpg">
+        </div>
+        <div class="work_item">
+             <img src="img/work5.jpg">
+        </div>
+        <div class="work_item">
+             <img src="img/work4.jpg">
+        </div>
+        <div class="work_item">
+             <img src="img/work3.jpg">
+        </div>
+        <div class="work_item">
+             <img src="img/work2.jpg">
+        </div>
+    </main>
+</div>
+<!-- work end -->
+
+<!-- tiidelab experiance start -->
+
+<div class="experience" id="event">
+    <h2 class="title_head typewriter-text">TiideLab Meet_Up</h2>
+    <main class="mansory">
+        <div class="a">
+            <img src="img/image-7.jpg">
+        </div>
+        <div>
+            <img src="img/image-3.jpg">
+        </div>
+        <div class="b">
+            <img src="img/image-5.jpeg">
+        </div>
+        <div>
+            <img src="img/image-6.jpeg">
+        </div>
+        <div class="c">
+            <img src="img/image-7.jpg">
+            <p></p>
+        </div>
+        <div>
+            <img src="img/image-2.jpeg">
+        </div>
+        <div>
+           <img src="img/image-4.jpeg">
+        </div>
+        <div class="d">
+            <img src="img/image-10.jfif">
+        </div>
+    </main>
+</div>
+
+<!-- tiidelab experiance end -->
+
 <!-- third section  -->
 
-<div style="background-color:#f5f5f5;">
-    <div style="width: 80%; padding:45px ; margin: 20px auto 0; color: rgb(17, 17, 17);">
-
-
-        <div class="third_section">
-            <img src="img/user-4.png" alt="">
-            <p>Paulo Parra</p>
-            <hr style="width: 50%;">
-            <p><i>The team was fast and friendly-honestly my <br> house hasn't been this clean in years!</i></p>
+<div  class="third_section"  style="  background-color: rgb(12, 5, 0);width: 100%; padding:45px; margin: 20px auto auto 0; color: rgb(17, 17, 17);">
+    <div>
+       
+              <div class="form_container"  style="text-align:center;float:left;  color: #fff; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bolder;">
+            <h2 class="title_head" style="color: #fff;">Contact</h2>
+          
+            <form action=""name="signUp"  onsubmit="processForm()" id="signUp">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <input type="number" name="number" id="number" placeholder="Your Phone" required>
+                <textarea name="message" id="message" cols="20" rows="2" required placeholder="Enter Message"></textarea>
+                <input type="submit" class="submit" name="submit" value="Hire Me" style= "width:80%; padding:10px; margin: 5px 0 30px 5px; font-weight: bolder; color: #fff; font-size: large;">
+            </form>
+       
         </div>
-        <div class="third_section">
-            <img src="img/user-1.png" alt="">
-            <p>Ana Carolina</p>
-            <hr style="width: 50%;">
-            <p><i>It feels so great walking into a fresh, clean <br> apartment everyday. These guys make my <br> place spotless</i></p>
+            
+              <div class="form_container"  style="text-align:center;float:left;  color: #fff; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bolder;">
+            <h2 class="title_head" style="color: #fff;">Click To Donwload My Resume</h2>
+
+            
+            <img src="img/skill.png" height="auto" width="80%">
+          
+            <div class="cv_form" id="con">
+                <a href="https://github.com/Baba-Muizz/resume/raw/main/CV.pdf"  style= "width:100%; padding:10px; margin:15px 0 30px 5px; font-weight: bolder; color: #fff; font-size: large;" target="_blank">Download</a>
+            </div>
+       
         </div>
-        
-        
         <div style="clear:left;"></div>
         
-        </div>
-        
+    </div>
 </div>
 <!-- footer  -->
-    <div style="background-color: #0c0c0c;">
-        <div class="footer" style="width: 80%; padding:8px ; margin: 20px auto;  color: rgb(255, 255, 255);">
-            <p style="padding-left: 20px;">&copy;Copyright. All Rights Reserved.</p>
+    <div class="footer" style="background-color: #0c0c0c;">
+        <div class="footer" style=" padding:8px ; margin: 0px auto;  color: rgb(255, 255, 255);">
+            <p style="padding-left: 20px; text-align: center;">
+                <a class="footer-icon" href="mailto:yusufabdulmuizz00@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                <a class="footer-icon" href="https://www.twitter.com/AbdulmuizzYusuf" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="footer-icon" href="https://www.instagram.com/baba_muizz" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="footer-icon" href="https://www.linkedin.com/in/abdulmuizz-yusuf-72798716a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="footer-icon" href="https://www.github.com/Baba-muizz" target="_blank"><i class="fab fa-github"></i></a>
+                &copy;Copyright. All Rights Reserved. <a class="footer-top" href="#top"><i class="fas fa-arrow-circle-up"></i></a> </p>   
+           
+            
         </div>
     </div>
+    <div style="clear:left;"></div>
 
 
 
